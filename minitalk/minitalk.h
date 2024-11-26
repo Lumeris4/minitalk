@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 10:00:51 by lelanglo          #+#    #+#             */
-/*   Updated: 2024/11/25 14:58:49 by lelanglo         ###   ########.fr       */
+/*   Updated: 2024/11/26 09:45:40 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@
 # define KCYN "\x1B[36m"
 # define KWHT "\x1B[37m"
 
-static int	ft_isdigit_str(char **argv);
+int	ft_isdigit_str(char **argv);
 
 #endif

@@ -6,13 +6,13 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 10:00:45 by lelanglo          #+#    #+#             */
-/*   Updated: 2024/11/25 14:58:36 by lelanglo         ###   ########.fr       */
+/*   Updated: 2024/11/26 09:48:11 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-static int	ft_isdigit_str(char **argv)
+int	ft_isdigit_str(char **argv)
 {
 	int	i;
 
