@@ -7,7 +7,7 @@ CFLAGS = -Wall -Wextra -Werror
 LIBFTDIR = libft
 LIBFT = $(LIBFTDIR)/libft.a
 
-SERVER_SRCS = server.c
+SERVER_SRCS = server.c supporting_functions_server.c
 CLIENT_SRCS = error.c client.c
 
 all: $(LIBFT) $(SERVER_NAME) $(CLIENT_NAME)

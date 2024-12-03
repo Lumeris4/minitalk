@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 10:00:45 by lelanglo          #+#    #+#             */
-/*   Updated: 2024/11/26 09:48:11 by lelanglo         ###   ########.fr       */
+/*   Updated: 2024/12/03 08:55:57 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,4 @@ int	ft_isdigit_str(char **argv)
 	while (argv[2][i])
 		i++;
 	return (i + 1);
-	return (0);
 }
