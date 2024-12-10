@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 10:00:54 by lelanglo          #+#    #+#             */
-/*   Updated: 2024/12/03 11:17:45 by lelanglo         ###   ########.fr       */
+/*   Updated: 2024/12/10 15:44:21 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static void	write_message(int *count, int *i, int *pid_client, int *s_size)
 {
 	if (*count == *s_size)
 	{
-		usleep(200);
+		usleep(100);
 		kill(*pid_client, SIGUSR1);
 		ft_printf("%s\n", g_message);
 		free(g_message);

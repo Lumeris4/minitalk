@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/25 10:00:42 by lelanglo          #+#    #+#             */
-/*   Updated: 2024/12/03 11:17:34 by lelanglo         ###   ########.fr       */
+/*   Updated: 2024/12/10 15:36:14 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static void	for_str(const char *str, pid_t pid)
 			else
 				kill(pid, SIGUSR1);
 			i--;
-			usleep(100);
+			usleep(50);
 		}
 		str++;
 	}
@@ -45,14 +45,14 @@ static void	for_int(unsigned int size, pid_t pid)
 		else
 			kill(pid, SIGUSR1);
 		i--;
-		usleep(100);
+		usleep(50);
 	}
 }
 
 static void	handler(int signum)
 {
 	if (signum == SIGUSR1)
-		ft_printf("You have write on the server\n");
+		ft_printf("Congratulations,You wrote on the server\n");
 	else if (signum == SIGUSR2)
 		ft_printf("Error/n");
 	exit(0);
@@ -80,7 +80,6 @@ int	main(int argc, char **argv)
 		for_str(argv[2], pid);
 		signal(SIGUSR1, handler);
 		signal(SIGUSR2, handler);
-		ft_printf("Waiting for response...\n");
 		while (1)
 			pause();
 	}

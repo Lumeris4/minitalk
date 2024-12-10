@@ -6,7 +6,7 @@
 /*   By: lelanglo <lelanglo@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/03 10:01:49 by lelanglo          #+#    #+#             */
-/*   Updated: 2024/12/03 10:06:02 by lelanglo         ###   ########.fr       */
+/*   Updated: 2024/12/10 16:01:53 by lelanglo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	str_alloc(int s_size, int pid_client)
 		g_message = malloc(s_size * sizeof(char));
 		if (g_message == NULL)
 		{
-			kill(pid_client, SIGUSR1);
+			kill(pid_client, SIGUSR2);
 			free(g_message);
 			exit(0);
 		}
